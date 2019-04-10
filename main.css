@@ -64,7 +64,7 @@ nav {
 .menuSlideDown {
   position: absolute;
   top: -35%;
-  animation: slide-down 0.75s forwards ease-out;
+  animation: slide-down 0.8s forwards ease-out;
 }
 
 @keyframes slide-down {
