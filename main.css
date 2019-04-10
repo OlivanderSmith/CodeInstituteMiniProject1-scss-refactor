@@ -1,0 +1,91 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+  background-color: #f7f7f7;
+  overflow: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* -------------------------------NavBar---------------------------------- */
+
+nav {
+  background-color: #8ec9d7;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  z-index: 1;
+}
+
+.logo img {
+  width: 70px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.burgerMenu {
+  margin: 0 20px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.burgerMenu i {
+  font-size: 30px;
+  color: #edeeef;
+  outline: none;
+}
+
+.dropdownContent {
+  position: absolute;
+  right: -20px;
+  top: -230px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: #f7f7f7;
+  -webkit-box-shadow: 5px 12px 47px -25px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 12px 47px -25px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px 12px 47px -25px rgba(0, 0, 0, 0.75);
+  transition: all 0.5s ease-in-out;
+  z-index: -1;
+}
+
+.dropdownContent a {
+  font-size: 18px;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #282828;
+  outline: none;
+}
+
+.menuSlideDown {
+  position: absolute;
+  top: -35%;
+  animation: slide-down 0.75s forwards ease-out;
+}
+
+@keyframes slide-down {
+  100% {
+    top: 35px;
+  }
+}
+
+.menuSlideUp {
+  position: absolute;
+  top: 35px;
+  animation: slide-up 0.5s forwards;
+}
+
+@keyframes slide-up {
+  100% {
+    top: -100%;
+  }
+}
+
+.unhiddenMenu {
+  position: absolute;
+  top: 35px;
+}
