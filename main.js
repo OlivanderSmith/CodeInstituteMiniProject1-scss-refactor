@@ -15,7 +15,6 @@ const burgerClick = (burgerButton.onclick = () => {
   if (burgerMenu.classList.contains(hidden)) {
     burgerMenu.classList.add(down);
     burgerMenu.classList.remove(hidden);
-    burgerMenu.classList.add(up);
     burgerMenu.classList.remove(up);
     setTimeout(() => burgerMenu.classList.add(unhidden), 500);
     burgerIcon.classList.remove(startways);
@@ -40,8 +39,10 @@ var previousPosition = window.pageYOffset;
 window.onscroll = () => {
   var currentPosition = window.pageYOffset;
 
-  if (previousPosition > currentPosition) {
-    navBar.style.top = "8px";
+  if (window.pageYOffset < 70) {
+    navBar.style.top = "0";
+  } else if (previousPosition > currentPosition) {
+    navBar.style.top = "0";
   } else {
     navBar.style.top = "-50vh";
   }
