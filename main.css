@@ -32,7 +32,7 @@ nav {
   position: fixed;
   top: 0px;
   transition: top 1.25s;
-  z-index: 100;
+  z-index: 100000;
   -webkit-box-shadow: 0px 3px 20px -5px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 3px 20px -5px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 3px 20px -5px rgba(0, 0, 0, 0.75);
@@ -183,7 +183,6 @@ section h1 {
   text-transform: uppercase;
   margin: 0 40px;
   font-weight: 1000;
-  text-emphasis: ;
 }
 
 section h2 {
