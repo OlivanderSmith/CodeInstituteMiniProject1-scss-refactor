@@ -39,7 +39,7 @@ var previousPosition = window.pageYOffset;
 window.onscroll = () => {
   var currentPosition = window.pageYOffset;
 
-  if (window.pageYOffset < 70) {
+  if (window.pageYOffset < 40) {
     navBar.style.top = "0";
   } else if (previousPosition > currentPosition) {
     navBar.style.top = "0";

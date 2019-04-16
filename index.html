@@ -19,7 +19,7 @@
   </head>
 
   <body>
-    <!-- NAV BAR -->
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  NAV BAR -->
     <nav id="navBar">
       <div class="dropdownExcluder">
         <a href="index.html"
@@ -46,56 +46,62 @@
         </div>
 
         <div class="desktopMenu">
-          <a href="#" class="">What we do</a>
-          <a href="#" class=""
-            >How to participate <i class="fas fa-angle-down"></i
-          ></a>
-          <a href="#" class="">Who we are</a>
-        </div>
-
-        <div class="desktopDropdown">
-          <a href="#" class="dropdownItem">Give directly</a>
-          <a href="#" class="dropdownItem">Contact us</a>
-          <a href="#" class="dropdownItem">See our partners</a>
+          <a href="#" class="nonDropdownMenuitem">What we do</a>
+          <div class="desktopDropdownBtn">
+            <a href="#" class="menuBtn"
+              >How to participate <i class="fas fa-angle-down"></i
+            ></a>
+            <div class="desktopDropdownContent">
+              <a href="#" class="dropdownItem">Give directly</a>
+              <a href="#" class="dropdownItem">Contact us</a>
+              <a href="#" class="dropdownItem">See our partners</a>
+            </div>
+          </div>
+          <a href="#" class="nonDropdownMenuitem">Who we are</a>
         </div>
       </div>
     </nav>
 
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  Header -->
+
     <header>
-      Bacon ipsum dolor amet salami prosciutto tongue, filet mignon sirloin pork
-      loin meatloaf pig tri-tip beef pancetta. Shank swine salami sirloin.
-      Sirloin cow meatball biltong kevin. Ground round jerky chicken meatball.
-      Salami cow cupim, alcatra tenderloin fatback pig swine. Sirloin hamburger
-      chicken, cupim tri-tip turducken shoulder pork loin picanha burgdoggen
-      leberkas swine prosciutto. Kielbasa pork ribeye andouille buffalo ground
-      round rump pancetta jerky cupim jowl capicola pastrami. Strip steak kevin
-      t-bone chicken shoulder short ribs biltong capicola. Alcatra corned beef
-      cupim pastrami pork belly ribeye meatloaf swine landjaeger tail tongue
-      flank kevin buffalo salami. Ball tip pork chop ground round strip steak
-      short ribs short loin. Andouille fatback chuck tri-tip. Pork loin strip
-      steak ground round, pork chop drumstick fatback bacon cupim kielbasa jowl
-      ham shoulder chicken sirloin. Alcatra leberkas pork belly pork chop jerky
-      prosciutto bresaola meatball pastrami. Jowl bresaola cupim landjaeger
-      strip steak shoulder drumstick porchetta burgdoggen cow kielbasa pig pork
-      belly. Pig tongue pancetta, brisket pork spare ribs jowl tenderloin ribeye
-      meatloaf tri-tip. Strip steak landjaeger short ribs tri-tip cupim tail,
-      jowl spare ribs shoulder. Cow drumstick hamburger jowl bacon pork t-bone
-      tail picanha. Flank short loin beef, landjaeger leberkas tail short ribs
-      t-bone sausage rump. Picanha frankfurter ham hock burgdoggen doner shank
-      sirloin, t-bone hamburger bresaola. Short ribs pancetta porchetta filet
-      mignon cupim, bresaola corned beef tri-tip. Jowl ham landjaeger, chicken
-      cow sausage ground round strip steak pancetta sirloin porchetta buffalo
-      cupim beef ribs venison. Chuck ball tip pastrami tri-tip burgdoggen
-      landjaeger. Tail porchetta sausage frankfurter chuck picanha ham hock
-      shankle, cow pancetta tongue. Andouille burgdoggen cow, venison bresaola
-      ground round t-bone hamburger leberkas. Biltong short loin jerky, kevin
-      sirloin alcatra pastrami tri-tip swine sausage salami doner venison shank.
-      Capicola pig ribeye andouille tongue. Flank leberkas pork belly jerky
-      shank. Kevin shoulder picanha flank. Does your lorem ipsum text long for
-      something a little meatier? Give our generator a try… it’s tasty!
+      <div class="headerText">
+        <h1 class="headerSleeper">Sleeper</h1>
+        <h2 class="headerTagline">
+          Solutions to homelessness with Universal Income
+        </h2>
+      </div>
     </header>
 
-    <section></section>
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  Section - InfoCards -->
+    <div class="pointedRoof"></div>
+    <section id="infoCards" class="infoCards">
+      <div class="whatWeDoCard">
+        <img src="assets/images/help.png" alt="Homeless aid" class="helpIcon" />
+        <h1 class="whatWeDoTitle">What we do</h1>
+        <h2>
+          We look to provide personalised support to rough sleepers in Dublin
+          using long-term basic income
+        </h2>
+        <button class="learnMoreBtn"><a href="#">Learn More</a></button>
+      </div>
+
+      <div class="whoWeAreCard">
+        <img
+          src="assets/images/teamwork.png"
+          alt="our team pic"
+          class="teamIcon"
+        />
+        <h1 class="whoWeAreTitle">Who we are</h1>
+        <h2>
+          We're a not-for-profit organisation that sees the homelessness crisis
+          in Dublin as the greatest social injustice in Ireland
+        </h2>
+        <button class="ourTeamBtn"><a href="#">Our team</a></button>
+      </div>
+    </section>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  Footer -->
 
     <footer>
       <div class="logo">
@@ -122,13 +128,28 @@
           ><i class="fab fa-twitter"></i
         ></a>
       </div>
+      <div class="freePik">
+        Icons made by
+        <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from
+        <a href="https://www.flaticon.com/" title="Flaticon"
+          >www.flaticon.com</a
+        >
+        is licensed by
+        <a
+          href="http://creativecommons.org/licenses/by/3.0/"
+          title="Creative Commons BY 3.0"
+          target="_blank"
+          >CC 3.0 BY</a
+        >
+      </div>
       <h4 class="developer">
-        Developed by
+        Developed by_
         <a href="https://github.com/OlivanderSmith" target="_blank">
           FlashWalrus - Olivander Smith
         </a>
       </h4>
     </footer>
+
     <script src="main.js"></script>
   </body>
 </html>
