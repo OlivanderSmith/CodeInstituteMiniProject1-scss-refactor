@@ -24,7 +24,7 @@ button {
 
 nav {
   background-color: #8ec9d7;
-  height: 16vh;
+  height: 12vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -32,13 +32,17 @@ nav {
   position: fixed;
   top: 0px;
   transition: top 1.25s;
+  z-index: 100;
+  -webkit-box-shadow: 0px 3px 20px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 3px 20px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 3px 20px -5px rgba(0, 0, 0, 0.75);
 }
 
 .dropdownExcluder {
   background-color: #8ec9d7;
   position: relative;
   width: 100%;
-  height: 16vh;
+  height: 12vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -103,7 +107,7 @@ nav {
 
 @keyframes slide-down {
   100% {
-    top: -5px;
+    top: -15px;
   }
 }
 
@@ -142,7 +146,7 @@ header {
     #8ec9d7;
   background-position-x: 10%;
   background-size: cover;
-  height: 100vh;
+  height: 90vh;
 }
 
 .headerText {
@@ -161,6 +165,118 @@ header h1 {
 
 header h2 {
   margin: 0;
+}
+
+/* -------------------------------Section - InfoCards----------------------------------- */
+
+#infoCards {
+  background-color: #cce8ef;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  text-align: center;
+}
+
+section h1 {
+  text-transform: uppercase;
+  margin: 0 40px;
+  font-weight: 1000;
+  text-emphasis: ;
+}
+
+section h2 {
+  margin: 10px 40px;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.pointedRoof {
+  background-color: #cce8ef;
+  height: 200px;
+  width: 200px;
+  top: 100%;
+  border-radius: 8px;
+  position: absolute;
+  z-index: 0;
+  transform: rotate(45deg);
+  align-self: center;
+  -webkit-box-shadow: 0px 3px 20px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 3px 20px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 3px 20px -5px rgba(0, 0, 0, 0.75);
+}
+
+.whatWeDoCard {
+  background-color: #59a9bc;
+  margin: 10%;
+  border-radius: 12px;
+  height: 550px;
+  width: 75vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  color: #edeeef;
+  z-index: 5;
+  -webkit-box-shadow: 0px 3px 20px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 3px 20px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 3px 20px -5px rgba(0, 0, 0, 0.75);
+}
+
+.helpIcon {
+  height: 120px;
+  width: 120px;
+  margin: 10% 0 5% 0;
+}
+
+section button {
+  margin: 40px;
+  height: 60px;
+  width: 120px;
+  border-radius: 12px;
+  border: none;
+}
+
+section button a {
+  color: #edeeef;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.learnMoreBtn {
+  background-color: #9bd187;
+}
+
+.ourTeamBtn {
+  background-color: #59a9bc;
+}
+
+.whoWeAreCard {
+  background-color: #9bd187;
+  margin: 10%;
+  height: 550px;
+  border-radius: 12px;
+  width: 75vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  color: #edeeef;
+  z-index: 6;
+  -webkit-box-shadow: 0px 3px 20px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 3px 20px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 3px 20px -5px rgba(0, 0, 0, 0.75);
+}
+
+.teamIcon {
+  height: 120px;
+  width: 120px;
+  margin: 10% 0 5% 0;
 }
 
 /* -------------------------------Footer----------------------------------- */
@@ -226,6 +342,16 @@ footer .logo img {
   cursor: pointer;
 }
 
+.freePik {
+  text-align: center;
+  margin: 10px 20px;
+}
+
+.freePik a {
+  color: #edeeef;
+  text-decoration: none;
+}
+
 /* -------------------------------MediaQuery for Desktop View---------------------------------- */
 /* -------------------------------MediaQuery for Desktop View---------------------------------- */
 /* -------------------------------MediaQuery for Desktop View---------------------------------- */
@@ -254,34 +380,6 @@ footer .logo img {
   .mobileMenu,
   .dropdownMenu {
     display: none;
-  }
-
-  nav {
-    background-color: #8ec9d7;
-    height: 12vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    position: fixed;
-    top: 0px;
-    transition: top 0.5s ease-out;
-    z-index: 100;
-  }
-
-  .dropdownExcluder {
-    background-color: #8ec9d7;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 2;
-    height: 12vh;
-  }
-
-  .logo img {
-    width: 70px;
-    margin: 10px;
   }
 
   .desktopMenu {
@@ -399,86 +497,25 @@ footer .logo img {
   /* -------------------------------Section - InfoCards----------------------------------- */
 
   #infoCards {
-    background-color: #cce8ef;
-    display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    z-index: 1;
-    text-align: center;
-  }
-
-  section h1 {
-    text-transform: uppercase;
-  }
-
-  section h2 {
-    margin: 10px;
-    font-size: 20px;
   }
 
   .pointedRoof {
-    background-color: #cce8ef;
-    height: 200px;
-    width: 200px;
     top: 98%;
-    border-radius: 8px;
-    position: absolute;
-    z-index: 0;
-    transform: rotate(45deg);
-    align-self: center;
-    -webkit-box-shadow: 0px 3px 20px -5px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 3px 20px -5px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 3px 20px -5px rgba(0, 0, 0, 0.75);
   }
 
   .whatWeDoCard {
-    background-color: #59a9bc;
     margin: 5%;
-    border-radius: 12px;
     height: 500px;
     width: 35vw;
-    display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-content: center;
-    align-items: center;
-    color: #edeeef;
-    z-index: 5;
-    -webkit-box-shadow: 0px 3px 20px -5px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 3px 20px -5px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 3px 20px -5px rgba(0, 0, 0, 0.75);
   }
 
   .helpIcon {
     height: 100px;
     width: 100px;
     margin: 10% 0 5% 0;
-  }
-
-  section button {
-    margin: 40px;
-    height: 60px;
-    width: 120px;
-    border-radius: 12px;
-    border: none;
-  }
-
-  section button a {
-    color: #edeeef;
-    text-transform: uppercase;
-    font-size: 15px;
-    font-weight: 600;
-    text-decoration: none;
-  }
-
-  .learnMoreBtn {
-    background-color: #9bd187;
-    transition: all 0.3s ease-in-out;
-  }
-
-  .ourTeamBtn {
-    background-color: #59a9bc;
-    transition: all 0.3s ease-in-out;
   }
 
   .learnMoreBtn a,
@@ -503,21 +540,10 @@ footer .logo img {
   }
 
   .whoWeAreCard {
-    background-color: #9bd187;
     margin: 5%;
     height: 500px;
-    border-radius: 12px;
     width: 35vw;
-    display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-content: center;
-    align-items: center;
-    color: #edeeef;
-    z-index: 6;
-    -webkit-box-shadow: 0px 3px 20px -5px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 3px 20px -5px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 3px 20px -5px rgba(0, 0, 0, 0.75);
   }
 
   .teamIcon {
@@ -529,20 +555,7 @@ footer .logo img {
   /* -------------------------------Footer----------------------------------- */
 
   footer {
-    display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #8ec9d7;
-    margin-top: 20px;
-    color: #edeeef;
-    font-size: 15px;
-  }
-
-  footer .logo img {
-    width: 70px;
-    margin: 20px 20px 0 20px;
   }
 
   .footerAnchors {
@@ -572,41 +585,7 @@ footer .logo img {
     transition: all 0.3s ease-in-out;
   }
 
-  .footerAnchors a {
-    font-size: 20px;
-    font-weight: 600;
-    padding: 5px 10px;
-    text-decoration: none;
-    color: #edeeef;
-    outline: none;
-    margin: 5px;
-  }
-
   .footerSocialLinks {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 5px 0;
     width: 60%;
-  }
-
-  .footerSocialLinks a i {
-    color: #edeeef;
-    margin: 5px;
-    font-size: 30px;
-  }
-
-  .developer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 15px;
-  }
-
-  .developer a {
-    text-decoration: none;
-    color: #edeeef;
-    cursor: pointer;
   }
 }
