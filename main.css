@@ -138,8 +138,6 @@ nav {
 header {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
   padding-top: 14vh;
   margin-top: 15px;
   background: url(assets/images/homeless.png) no-repeat center center fixed,
@@ -153,18 +151,36 @@ header {
   margin: 10px 10%;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   flex-direction: column;
   color: #edeeef;
 }
 
 header h1 {
   font-size: 55px;
-  margin-top: 60%;
+  margin-top: 37.5%;
 }
 
 header h2 {
   margin: 0;
+}
+
+.learnMoreHeaderBtn {
+  margin: 40px 0;
+  height: 60px;
+  width: 120px;
+  border-radius: 12px;
+  border: none;
+  background-color: #9bd187;
+}
+
+.learnMoreHeaderBtn a {
+  color: #edeeef;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
 }
 
 /* -------------------------------Section - InfoCards----------------------------------- */
@@ -476,6 +492,7 @@ footer .logo img {
     width: 30%;
     display: flex;
     justify-content: flex-end;
+    align-items: flex-end;
     flex-direction: column;
     color: #edeeef;
   }

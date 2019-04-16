@@ -205,7 +205,7 @@
   text-align: center;
   color: #f3f3f3;
   padding: 10px;
-  margin: 75px 0px 75px 0px;
+  margin: 75px 0px;
   height: 100%;
   width: 50%;
 }
@@ -236,6 +236,7 @@
 
   .carousel-slide {
     flex-direction: column;
+    height: 550px;
   }
 
   .slideText h1 a,
@@ -257,7 +258,9 @@
   }
 
   .slideText {
-    margin: 0 0 20px 0;
+    margin: 0 10px 20px 10px;
+    padding: 0 10px;
+    width: 90%;
   }
 
   .arrow-left {
