@@ -190,3 +190,11 @@ setInterval(
       : null,
   3000
 );
+
+// -----------------------------------Contact form submit
+
+function alertSorry() {
+  alert(
+    "Notice: this project is still under construction. Please send your query to oli-smith@live.co.uk and we will revert as soon as we can. Thanks for your patience"
+  );
+}

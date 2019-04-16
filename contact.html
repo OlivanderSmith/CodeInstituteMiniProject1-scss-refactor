@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="main.css" type="text/css" />
+    <link rel="stylesheet" href="contact.css" type="text/css" />
+    <link rel="stylesheet" href="mediaCarousel.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  NAV BAR -->
+    <nav id="navBar">
+      <div class="dropdownExcluder">
+        <a href="index.html"
+          ><div class="logo">
+            <img
+              src="assets/images/sleeperLogoOffWhite.png"
+              alt="Sleeper Logo"
+            /></div
+        ></a>
+        <a>
+          <div class="dropdownMenu">
+            <button id="burgerButton" class="burgerMenu">
+              <i id="burgerIcon" class="fas fa-bars menuOrigin"></i>
+            </button>
+          </div>
+        </a>
+
+        <div id="burgerMenu" class="dropdownContent hiddenMenu mobileMenu">
+          <a href="#" class="dropdownItem" id="firstDropdownItem">What we do</a>
+          <a href="#" class="dropdownItem">How to participate</a>
+          <a href="#" class="dropdownItem">Who we are</a>
+          <a href="contact.html" class="dropdownItem">Contact us</a>
+          <a href="#" class="dropdownItem">Our partners</a>
+        </div>
+
+        <div class="desktopMenu">
+          <a href="#" class="nonDropdownMenuitem">What we do</a>
+          <div class="desktopDropdownBtn">
+            <a href="#" class="menuBtn"
+              >How to participate <i class="fas fa-angle-down"></i
+            ></a>
+            <div class="desktopDropdownContent">
+              <a href="#" class="dropdownItem">Give directly</a>
+              <a href="contact.html" class="dropdownItem">Contact us</a>
+              <a href="#" class="dropdownItem">See our partners</a>
+            </div>
+          </div>
+          <a href="#" class="nonDropdownMenuitem">Who we are</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  Header contact form -->
+
+    <header class="contactHeader">
+      <h1>Contact Us</h1>
+      <div class="contactFormContainer">
+        <form class="contactForm" onsubmit="alert()" class="contactForm">
+          <input type="text" placeholder="  first name..." name="fname" />
+          <br />
+          <input type="text" placeholder="  last name..." name="lname" />
+          <br />
+          <input type="text" placeholder="  email..." name="email" />
+          <br />
+          <textarea
+            placeholder="  leave a message..."
+            name="comment"
+            form="usrform"
+          ></textarea>
+          <input onclick="alertSorry()" value="SUBMIT" type="submit" id="submitButton"></input>
+        </form>
+      </div>
+    </header>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  Footer -->
+
+    <footer>
+      <div class="logo">
+        <img src="assets/images/sleeperLogoOffWhite.png" alt="Sleeper Logo" />
+      </div>
+      <h4>©2019 Sleeper Ireland</h4>
+      <div class="footerAnchors">
+        <a href="contact.html">Contact us</a>
+        <a href="#">Our partners</a>
+      </div>
+      <div class="footerSocialLinks">
+        <a href="https://github.com/Code-Institute-Org" target="_blank"
+          ><i class="fab fa-github-alt"></i
+        ></a>
+        <a
+          href="https://www.youtube.com/channel/UCKRfPElX5ZJDoJavDqPrpKg"
+          target="_blank"
+          ><i class="fab fa-youtube"></i
+        ></a>
+        <a href="https://www.facebook.com/Code.InstituteIRL/" target="_blank"
+          ><i class="fab fa-facebook-square"></i
+        ></a>
+        <a href="https://twitter.com/CodersInstitute" target="_blank"
+          ><i class="fab fa-twitter"></i
+        ></a>
+      </div>
+      <div class="freePik">
+        Icons made by
+        <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from
+        <a href="https://www.flaticon.com/" title="Flaticon"
+          >www.flaticon.com</a
+        >
+        is licensed by
+        <a
+          href="http://creativecommons.org/licenses/by/3.0/"
+          title="Creative Commons BY 3.0"
+          target="_blank"
+          >CC 3.0 BY</a
+        >
+      </div>
+      <h4 class="developer">
+        Developed by_
+        <a href="https://github.com/OlivanderSmith" target="_blank">
+          FlashWalrus - Olivander Smith
+        </a>
+      </h4>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
