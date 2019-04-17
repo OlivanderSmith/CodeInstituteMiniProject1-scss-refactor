@@ -14,20 +14,19 @@ body {
   background-color: rgb(124, 124, 124);
   display: flex;
   justify-content: flex-start;
-  height: 50vh;
+  height: 70vh;
   overflow: hidden;
 }
 
 .oldMan {
-  width: 180%;
-  height: 120%;
+  width: 200%;
 }
 
 .whatWeDoHeader h1 {
   margin: 10px;
   position: absolute;
   color: #edeeef;
-  top: 17%;
+  top: 20%;
   left: 1%;
   font-size: 40px;
 }
@@ -36,7 +35,7 @@ body {
   width: 50%;
   position: absolute;
   color: #edeeef;
-  top: 26%;
+  top: 28%;
   left: 5%;
   font-size: 20px;
   font-style: italic;
@@ -44,7 +43,7 @@ body {
 
 .learnMoreHeaderBtn {
   position: absolute;
-  top: 38%;
+  top: 40%;
   left: 5%;
 }
 
@@ -52,21 +51,21 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 90%;
-  margin: 20px 0;
+  width: 80%;
+  margin: 20px 30px;
 }
 
 #article h1 {
   margin: 20px;
-  color: gray;
-  font-size: 30px;
+  color: rgb(54, 54, 54);
+  font-size: 35px;
   display: flex;
   justify-content: flex-start;
 }
 
 .article p {
   margin: 10px;
-  color: gray;
+  color: rgb(54, 54, 54);
   font-size: 20px;
   display: flex;
   justify-content: flex-start;
@@ -74,5 +73,39 @@ body {
 }
 
 .article p a {
-  color: gray;
+  color: rgb(54, 54, 54);
+}
+
+@media screen and (min-width: 620px) {
+  #oldManContainer {
+    justify-content: flex-start;
+    align-items: center;
+    height: 75vh;
+  }
+
+  .oldMan {
+    height: 150%;
+  }
+
+  .whatWeDoHeader h1 {
+    top: 25%;
+    left: 5%;
+    font-size: 40px;
+  }
+
+  .whatWeDoHeader h2 {
+    width: 30%;
+    top: 35%;
+    left: 6%;
+  }
+
+  .learnMoreHeaderBtn {
+    top: 45%;
+    left: 6%;
+  }
+
+  .article {
+    width: 80%;
+    margin: 20px 70px;
+  }
 }
