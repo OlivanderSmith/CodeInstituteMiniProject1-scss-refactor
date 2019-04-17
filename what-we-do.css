@@ -1,0 +1,78 @@
+body {
+  background-color: #edeeef;
+}
+
+.whatWeDoHeader {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 50px;
+  background-color: #edeeef;
+}
+
+#oldManContainer {
+  background-color: rgb(124, 124, 124);
+  display: flex;
+  justify-content: flex-start;
+  height: 50vh;
+  overflow: hidden;
+}
+
+.oldMan {
+  width: 180%;
+  height: 120%;
+}
+
+.whatWeDoHeader h1 {
+  margin: 10px;
+  position: absolute;
+  color: #edeeef;
+  top: 17%;
+  left: 1%;
+  font-size: 40px;
+}
+
+.whatWeDoHeader h2 {
+  width: 50%;
+  position: absolute;
+  color: #edeeef;
+  top: 26%;
+  left: 5%;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.learnMoreHeaderBtn {
+  position: absolute;
+  top: 38%;
+  left: 5%;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 90%;
+  margin: 20px 0;
+}
+
+#article h1 {
+  margin: 20px;
+  color: gray;
+  font-size: 30px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.article p {
+  margin: 10px;
+  color: gray;
+  font-size: 20px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.article p a {
+  color: gray;
+}

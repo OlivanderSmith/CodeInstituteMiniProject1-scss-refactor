@@ -7,15 +7,16 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 500px;
+  height: 550px;
   margin-top: 80px;
 }
 
 .contactFormContainer {
   width: 80%;
+  margin-bottom: 40px;
 }
 
-h1 {
+contactH1 {
   color: #282828;
 }
 
