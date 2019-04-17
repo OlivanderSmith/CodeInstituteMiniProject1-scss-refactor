@@ -30,9 +30,9 @@ contactH1 {
 }
 
 .contactForm input {
-  margin: 10px 20px;
+  margin: 20px 20px 0 20px;
   height: 25px;
-  border-radius: 10px;
+  border-radius: 5px;
   border: none;
   width: 50%;
   outline: none;
@@ -41,7 +41,7 @@ contactH1 {
 .contactForm textarea {
   margin: 10px 20px;
   height: 100px;
-  border-radius: 10px;
+  border-radius: 5px;
   border: none;
   width: 80%;
   outline: none;
@@ -61,6 +61,12 @@ form textarea {
   border-radius: 12px;
   border: none;
   color: #edeeef;
+  transition: all 0.3s ease-in-out;
+}
+
+#submitButton:hover {
+  background-color: #edeeef;
+  color: #9bd187;
 }
 
 @media screen and (min-width: 620px) {
