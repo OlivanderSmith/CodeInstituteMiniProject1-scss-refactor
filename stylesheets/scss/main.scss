@@ -1,0 +1,14 @@
+//     sass --watch main.scss:../css/main.css
+
+// Modules and variables
+@import "modules/nav";
+@import "modules/footer";
+@import "modules/colors";
+
+//Partials
+@import "partials/dropdownMenus";
+@import "partials/typography";
+@import "partials/buttons";
+
+//Base
+@import "base/reset";
